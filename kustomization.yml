@@ -1,0 +1,5 @@
+namespace: opnsense
+resources:
+- opnsense-svc.yml
+- opnsense-ing.yml
+- opnsense-ns.yml
