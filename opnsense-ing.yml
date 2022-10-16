@@ -10,7 +10,7 @@ metadata:
     kubernetes.io/ingress.class: "nginx-internal"
 spec:
   rules:
-  - host: opnsense.<path:apps-kv/data/general#adminDN>
+  - host: opnsense.<path:apps-kv/data/general#internalDN>
     http:
       paths:
       - path: /
@@ -22,4 +22,4 @@ spec:
               number: 80
   tls:
   - hosts:
-    - opnsense.<path:apps-kv/data/general#adminDN>
+    - opnsense.<path:apps-kv/data/general#internalDN>
